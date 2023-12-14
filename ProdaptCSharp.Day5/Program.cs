@@ -6,7 +6,8 @@
     {
         static void Main(string[] args)
         {
-            DateTime today = DateTime.Today;
+            DateTime? today = null;
+            Console.WriteLine("helloworld");
 
         }
     }
