@@ -5,7 +5,7 @@
     public class Program
     {
         // static method called only by class name 
-        static string city;
+        static string city; 
 
         public void getdata()
         {
