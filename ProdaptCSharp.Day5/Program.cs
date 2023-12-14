@@ -4,18 +4,17 @@
 {
     public class Program
     {
-         static int count = 10;
-        int stdid;
+        // static method called only by class name 
+        static string city;
 
-        public Program()
+        public void getdata()
         {
-            count++;
-            stdid = count;
+            Console.Write("enter a city:");
+            city = Console.ReadLine();
+           
         }
-
-        static Program()
-        {
-            count = 100;
+        public static void printdata() {
+            Console.WriteLine($"city:{city}");
         }
 
         
@@ -39,8 +38,22 @@
 
             Program obj=new Program();
             Program obj2 = new Program();
-            Console.WriteLine($" static constructor called {obj.stdid}");
-            Console.WriteLine($"instance of the class{obj2.stdid}");
+            obj.getdata();
+            obj2.getdata();
+            Program.printdata();
+
+
+
+
+
+
+
+
+
+            // static method called only by class name 
+
+
+
         }
     }
 }
